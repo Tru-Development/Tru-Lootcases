@@ -72,6 +72,7 @@ Your case item must include the client event/export:
         event = 'tru-lootcases:client:useCase'
     }
 }
+```
 
 If nothing happens when using an ox_inventory item, the item snippet is not installed correctly or ox_inventory was not restarted after editing `data/items.lua`.
 
