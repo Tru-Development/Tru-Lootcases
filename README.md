@@ -117,9 +117,27 @@ Disable command testing before public server use.
 - `legendary_case`
 - `knife_case`
 
-## Security Notes
+## Knife Models
+Included are 87 FiveM-ready addon weapons.
 
-Rewards are selected server-side. The client only displays the animation. Reward claims use a server-created session token, cooldowns, timing checks, duplicate-claim checks, case validation, and item checks before removing cases.
+30× Bayonet
+23× Butterfly
+34× Karambit
+
+Included inventory images for:
+
+Every loot case
+Every included knife
+
+The included CSGO-style knife models were created by Paulo Safky.
+
+Original project:
+
+https://github.com/paulosafky/s_csgo_knives
+
+Huge thanks to Paulo Safky for making these assets available to the FiveM community.
+
+Please respect the original project and its license when using the included knife models.
 
 ## License
 
