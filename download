@@ -1,6 +1,0 @@
-*.zip
-*.rar
-*.7z
-*.log
-.cache/
-node_modules/
