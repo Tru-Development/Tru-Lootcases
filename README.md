@@ -13,13 +13,12 @@ https://www.youtube.com/watch?v=xKlzgcq4YbY
 ### Frameworks
 - QBCore
 - ESX Legacy
-- Qbox/QBX basic detection
-- Standalone testing
+- Qbox/QBX 
 
 ### Inventories
-- ox_inventory through item client event/exports
-- qb-inventory through QBCore usable items
-- ESX default inventory through ESX usable items
+- ox_inventory 
+- qb-inventory 
+- ESX default 
 
 For ox_inventory servers, item use is handled by the `client.export` entry in `ox_inventory/data/items.lua`.
 
@@ -73,46 +72,9 @@ Your case item must include the client event/export:
         event = 'tru-lootcases:client:useCase'
     }
 }
-```
 
 If nothing happens when using an ox_inventory item, the item snippet is not installed correctly or ox_inventory was not restarted after editing `data/items.lua`.
 
-## Config
-
-Open `config.lua`.
-
-```lua
-Config.Framework = 'auto'
-Config.Inventory = 'auto'
-```
-
-Available framework values:
-
-```lua
-auto, qb, qbox, esx, standalone
-```
-
-Available inventory values:
-
-```lua
-auto, ox, qb, esx, standalone
-```
-
-## Testing Command
-
-For setup testing only:
-
-```lua
-Config.AllowCommandTesting = true
-```
-
-Then use:
-
-```text
-/lootcase common_case
-```
-
-Disable command testing before public server use.
 
 ## Included Cases
 
