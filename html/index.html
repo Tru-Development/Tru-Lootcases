@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tru-Lootcases</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app" class="hidden">
+    <section class="panel">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+      <div class="frame frame-tl"></div>
+      <div class="frame frame-tr"></div>
+      <div class="frame frame-bl"></div>
+      <div class="frame frame-br"></div>
+
+      <button id="close" aria-label="Close lootcase">×</button>
+
+      <header class="topbar">
+        <div class="title-stack">
+          <div id="branding" class="branding hidden"></div>
+          <h1 id="caseTitle">Rare Case</h1>
+        </div>
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <strong>ROLLING</strong>
+        </div>
+      </header>
+
+      <div class="case-stage">
+        <div class="pointer"><span></span></div>
+        <div class="roller-wrap">
+          <div class="glass-reflect"></div>
+          <div class="edge-glow top"></div>
+          <div class="edge-glow bottom"></div>
+          <div id="roller" class="roller"></div>
+        </div>
+      </div>
+
+      <div id="result" class="result hidden"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
