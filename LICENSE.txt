@@ -1,0 +1,12 @@
+Tru-Lootcases v1.0.0
+Copyright (c) Tru-Development
+
+This resource is sold as a commercial FiveM asset.
+
+Customers may use this resource on servers they own or manage.
+Customers may edit configuration files and included installation snippets for their own server setup.
+
+Redistribution, resale, leaking, sharing, re-uploading, or claiming this resource as your own is not permitted.
+
+Support Discord:
+https://discord.gg/JDaHDxcJwt

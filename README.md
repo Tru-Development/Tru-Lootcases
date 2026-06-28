@@ -1,0 +1,126 @@
+# Tru-Lootcases
+
+Free open-source FiveM lootcase resource by **Tru-Development**.
+
+Tru-Lootcases provides animated lootcase openings with server-side reward selection, weighted loot tables, cooldowns, item removal checks, and protected reward claims.
+
+## Supported Setups
+
+### Frameworks
+- QBCore
+- ESX Legacy
+- Qbox/QBX basic detection
+- Standalone testing
+
+### Inventories
+- ox_inventory through item client event/exports
+- qb-inventory through QBCore usable items
+- ESX default inventory through ESX usable items
+
+For ox_inventory servers, item use is handled by the `client.export` entry in `ox_inventory/data/items.lua`.
+
+## Installation
+
+1. Place the folder in your resources.
+
+```cfg
+ensure Tru-Lootcases
+```
+
+2. Install your item definitions from `install/`.
+
+- `install/ox_inventory-items.lua`
+- `install/qb-core-items.lua`
+- `install/qbox-items.lua`
+- `install/esx-items.sql`
+
+3. Copy case images from:
+
+```text
+install/cases/
+```
+
+into your inventory image folder.
+
+### ox_inventory Images
+
+```text
+ox_inventory/web/images/
+```
+
+### qb-inventory Images
+
+```text
+qb-inventory/html/images/
+```
+
+## ox_inventory Item Example
+
+Your case item must include the client event/export:
+
+```lua
+['common_case'] = {
+    label = 'Common Case',
+    weight = 500,
+    stack = true,
+    close = true,
+    client = {
+        image = 'common_case.png',
+        event = 'tru-lootcases:client:useCase'
+    }
+}
+```
+
+If nothing happens when using an ox_inventory item, the item snippet is not installed correctly or ox_inventory was not restarted after editing `data/items.lua`.
+
+## Config
+
+Open `config.lua`.
+
+```lua
+Config.Framework = 'auto'
+Config.Inventory = 'auto'
+```
+
+Available framework values:
+
+```lua
+auto, qb, qbox, esx, standalone
+```
+
+Available inventory values:
+
+```lua
+auto, ox, qb, esx, standalone
+```
+
+## Testing Command
+
+For setup testing only:
+
+```lua
+Config.AllowCommandTesting = true
+```
+
+Then use:
+
+```text
+/lootcase common_case
+```
+
+Disable command testing before public server use.
+
+## Included Cases
+
+- `common_case`
+- `rare_case`
+- `legendary_case`
+- `knife_case`
+
+## Security Notes
+
+Rewards are selected server-side. The client only displays the animation. Reward claims use a server-created session token, cooldowns, timing checks, duplicate-claim checks, case validation, and item checks before removing cases.
+
+## License
+
+Free release. Keep the included license and credits when redistributing.
