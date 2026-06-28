@@ -4,6 +4,10 @@ Free open-source FiveM lootcase resource by **Tru-Development**.
 
 Tru-Lootcases provides animated lootcase openings with server-side reward selection, weighted loot tables, cooldowns, item removal checks, and protected reward claims.
 
+## 🎥 Preview Video
+
+https://www.youtube.com/watch?v=xKlzgcq4YbY
+
 ## Supported Setups
 
 ### Frameworks
