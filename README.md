@@ -139,6 +139,24 @@ Huge thanks to Paulo Safky for making these assets available to the FiveM commun
 
 Please respect the original project and its license when using the included knife models.
 
-## License
+License & Usage
 
-Free release. Keep the included license and credits when redistributing.
+Tru-Lootcases is released free of charge by Tru-Development for the FiveM community.
+
+You are welcome to:
+
+Use this resource on your server.
+Modify it to fit your server's needs.
+Contribute improvements through GitHub.
+
+Please do not:
+
+Reupload or redistribute this resource as your own.
+Remove the original Tru-Development credits.
+Sell this resource or include it in paid resource packs.
+Remove or alter the credits for the included knife assets created by Paulo Safky.
+Claim any part of this project as your own work.
+
+If you'd like to share this resource, please link to the official GitHub repository instead of reuploading the files.
+
+Thank you for respecting the work that went into this project.
