@@ -121,9 +121,5 @@ Please do not:
 Reupload or redistribute this resource as your own.
 Remove the original Tru-Development credits.
 Sell this resource or include it in paid resource packs.
-Remove or alter the credits for the included knife assets created by Paulo Safky.
-Claim any part of this project as your own work.
-
-If you'd like to share this resource, please link to the official GitHub repository instead of reuploading the files.
 
 Thank you for respecting the work that went into this project.
